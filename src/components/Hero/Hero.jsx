@@ -1,22 +1,25 @@
 import React from "react";
-import useTranslate from "../../hooks/useTranslate";
 import "./Hero.scss";
-//import truckBg from "../../assets/truck-bg.png";
+import useTranslate from "../../hooks/useTranslate";
+import heroImage from "../../assets/hero-illustration.png"; // Cập nhật nếu có SVG khác
 
 const Hero = () => {
   const t = useTranslate();
 
   return (
-    <section className="hero" id="home">
-      <div className="hero-inner">
-        <div className="hero-text">
-          <h1>{t("heroTitle")}</h1>
-          <p>{t("heroSubtitle")}</p>
-          <a href="#contact" className="cta-button">
-            {t("contact")}
+    <section className="hero-section" id="home">
+      <div className="hero-container">
+        <div className="hero-left">
+          <p className="hero-subtitle">{t("hero.subtitle")}</p>
+          <h1 className="hero-title">{t("hero.title")}</h1>
+          <p className="hero-highlight">{t("hero.highlight")}</p>
+          <a href="#about" className="hero-button">
+            {t("hero.cta")} <span className="arrow">→</span>
           </a>
         </div>
-        {/* Không có nội dung bên phải, hình đã nằm dưới dạng background */}
+        <div className="hero-right">
+          <img src={heroImage} alt="Hero Illustration" />
+        </div>
       </div>
     </section>
   );

@@ -8,6 +8,7 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/Contact/Contact";
 import ScrollToTop from "./components/ScrollToTopButton/ScrollToTopButton";
 import FloatingContactIcons from "./components/FloatingContactIcons/FloatingContactIcons";
+import Features from "./components/Features/Features";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <About />
       <Services />
+      <Features />
       <Testimonials />
       <Contact />
       <Footer />

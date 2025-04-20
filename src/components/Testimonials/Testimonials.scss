@@ -1,45 +1,130 @@
-.testimonials {
-    padding: 6rem 2rem;
-    background-color: var(--bg-color);
-    text-align: center;
+@import "../../styles/variables";
 
-    .container {
-        max-width: 1000px;
-        margin: 0 auto;
+.testimonials-section {
+    padding: $padding-section;
+    background-color: $section-bg;
+    position: relative;
+
+    .subtitle {
+        color: $accent-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 0.5rem;
     }
 
-    h2 {
-        font-size: 2.5rem;
-        color: var(--text-color);
-        margin-bottom: 2rem;
+    .title {
+        text-align: center;
+        font-size: $font-title;
+        font-weight: 800;
+        margin-bottom: 2.5rem;
+        color: $text-color;
     }
 
-    .testimonial-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 2rem;
+    .swiper {
+        padding-bottom: 3rem;
+        overflow: visible; // Allow hover translation outside
+
+        .swiper-wrapper {
+            min-height: 100%;
+            height: auto;
+            align-items: stretch;
+            overflow: visible; // Ensure visible for raised cards
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: none !important;
+        }
     }
 
     .testimonial-card {
-        background: white;
-        padding: 2rem;
-        border-radius: 1rem;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        background: #fff;
+        padding: 2rem 1.5rem;
+        border-radius: $radius-md;
+        box-shadow: $shadow-md;
+        transition: all 0.3s ease;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow: visible;
+        z-index: 1;
+        border: 2px solid transparent;
 
-        .feedback {
-            font-style: italic;
+        &:hover {
+            border-color: $primary-color;
+            transform: translateY(-4px);
+            z-index: 3;
+        }
+
+        .quote-mark {
+            position: absolute;
+            top: -20px;
+            right: 20px;
+            font-size: 4rem;
+            color: lighten($primary-color, 10%);
+            opacity: 0.2;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
             margin-bottom: 1rem;
-            color: #374151;
+            position: relative;
+            z-index: 2;
+
+            .avatar {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                object-fit: cover;
+                flex-shrink: 0;
+            }
+
+            .user-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h4 {
+                    margin: 0;
+                    font-weight: 700;
+                }
+
+                .company {
+                    margin: 0;
+                    font-size: $font-subtitle;
+                    color: $muted-color;
+                }
+            }
         }
 
-        .name {
-            font-weight: bold;
-            color: #2563eb;
+        .message {
+            font-size: $font-paragraph;
+            color: darken($text-color, 20%);
+            line-height: 1.5;
+            margin-top: 1rem;
+            z-index: 2;
+            position: relative;
         }
+                .description {
+                    text-align: center;
+                    font-size: $font-paragraph;
+                    color: $muted-color;
+                    max-width: 700px;
+                    margin: 0 auto 2rem;
+                    line-height: 1.6;
+                }
+    }
 
-        .role {
-            font-size: 0.875rem;
-            color: #6b7280;
+    @media (max-width: 768px) {
+        .title {
+            font-size: 1.5rem;
         }
     }
 }
