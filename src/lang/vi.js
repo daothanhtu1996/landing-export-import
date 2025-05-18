@@ -10,23 +10,38 @@ export const vi = {
     home: "TRANG CHỦ",
     about: "VỀ CHÚNG TÔI",
     products: "SẢN PHẨM",
-    career: "TUYỂN DỤNG",
+    testimonials: "ĐÁNH GIÁ KHÁCH HÀNG",
     contact: "LIÊN HỆ",
   },
   about: {
     subtitle: "Về Chúng Tôi",
-    title: "Chào mừng đến với dịch vụ xuất khẩu MATRION",
+    title: "GIAO DỊCH MATRION",
     description:
-      "Chúng tôi chuyên cung cấp giải pháp xuất nhập khẩu đáng tin cậy cho các doanh nghiệp trên toàn cầu. Với đội ngũ chuyên nghiệp và mạng lưới quốc tế, chúng tôi đảm bảo hàng hóa của bạn đến đúng nơi, đúng thời điểm.",
-    cta: "Tìm hiểu thêm",
+      "Matrion specialize in providing reliable import and export solutions for businesses related to Vietnamese-made products. With a professional team and network with manufacturers, Matrion will source best products with reasonable price and ensure your transaction to make in-time global delivery.",
+    cta: "Read More",
 
-    factsSubtitle: "Một Số Thống Kê",
-    factsTitle: "Nơi hàng đầu để quản lý mọi lô hàng của bạn",
-    factsDescription:
-      "Với nhiều năm kinh nghiệm trong lĩnh vực thương mại quốc tế, MATRION đã xây dựng được uy tín về sự chuyên nghiệp và hiệu quả. Nền tảng của chúng tôi giúp bạn kiểm soát hoạt động logistics một cách tự tin.",
-    clients: "Khách hàng hài lòng",
-    shipments: "Lô hàng đã hoàn tất",
-    reviews: "Đánh giá từ khách hàng",
+    factsSubtitle1: "WHY CHOOSE MATRION?",
+    factsTitle1:
+      "#1 Matrion tư vấn giải pháp AZ cho các doanh nghiệp trong nhiều ngành công nghiệp khác nhau.",
+    factsDescription1:
+      "Chúng tôi hiểu nỗ lực của bạn trong kinh doanh và chúng tôi ở đây để thiết kế và tạo ra những món quà tuyệt vời cho khách hàng của bạn.",
+    // ________
+    factsTitle2:
+      "#2 Matrion đảm bảo tiêu chuẩn chất lượng cao cho tất cả sản phẩm.",
+    factsDescription2:
+      "Chúng tôi phục vụ khách hàng toàn cầu và đảm bảo tiêu chuẩn xuất khẩu chất lượng cao cho tất cả các sản phẩm. ",
+    // ________
+    factsTitle3:
+      "#3 Matrion cung cấp dịch vụ lưu trữ và giao hàng đúng thời hạn. ",
+    factsDescription3:
+      "Chúng tôi cung cấp nhiều lựa chọn về thanh toán, lưu trữ và giao hàng cho doanh nghiệp của bạn, tiết kiệm thời gian của bạn thay vì phải làm việc với nhiều nhà sản xuất riêng biệt.",
+    // ________
+    factsTitle4: "#4 Matrion mang đến cho bạn mức giá cạnh tranh.",
+    factsDescription4:
+      "Chúng tôi có kinh nghiệm trong cả xuất khẩu (chứng nhận xuất khẩu) và giao dịch tại Việt Nam, mức thanh toán của bạn luôn xứng đáng và cạnh tranh. ",
+    // clients: "Khách hàng hài lòng",
+    // shipments: "Lô hàng đã hoàn tất",
+    // reviews: "Đánh giá từ khách hàng",
   },
   services: {
     subtitle: "Dịch Vụ",
@@ -35,12 +50,18 @@ export const vi = {
       "Chúng tôi là nhà nhập khẩu và phân phối sản phẩm chất lượng cho nhiều lĩnh vực.",
     cta: "Tìm hiểu thêm",
     items: {
-      1: { title: "Hóa chất nông nghiệp" },
-      2: { title: "Máy móc nông nghiệp" },
-      3: { title: "Hóa chất công nghiệp" },
-      4: { title: "Chất màu" },
-      5: { title: "Dầu bôi trơn" },
-      6: { title: "Chất tẩy rửa" },
+      1: { title: "Nón bảo hiểm xe máy" },
+      2: { title: "Mũ/Nón lưỡi trai" },
+      3: { title: "Áo thun/Áo Polo" },
+      4: { title: "Túi vải dệt/Túi vải không dệt" },
+      5: { title: "Ô dù" },
+      6: { title: "Cờ phướn" },
+      7: { title: "Thẻ treo hành lý" },
+      8: { title: "Ly giữ nhiệt" },
+      9: { title: "Bút" },
+      10: { title: "Balo dây rút" },
+      11: { title: "Áo mưa" },
+      12: { title: "Sổ tay" },
     },
   },
   features: {
@@ -71,8 +92,8 @@ export const vi = {
     road: "Vận chuyển đường bộ",
   },
   testimonials: {
-    subtitle: "Khách hàng đánh giá",
-    title: "Phản hồi từ đối tác của chúng tôi",
+    subtitle: "ĐÁNH GIÁ KHÁCH HÀNG",
+    title: "Phản hồi từ khách hàng chiến lược của chúng tôi",
     items: [
       {
         name: "Leslie Alexander",
@@ -115,9 +136,11 @@ export const vi = {
   footer: {
     address: {
       title: "Địa chỉ",
-      line1: "2464 Royal Ln. Mesa, New Jersey 45463",
-      phone: "(229) 555-0109",
-      email: "michael@example.com",
+      line1:
+        "4/7 Đường Xuân Thới Thượng 6, Xã Xuân Thới Thượng, Huyện Hóc Môn, Thành Phố Hồ Chí Minh",
+      phone: "(84) 969441533",
+      phone2: "(84) 969009553",
+      email: "matrionvn@gmail.com",
     },
     products: {
       title: "Sản phẩm",
@@ -140,6 +163,7 @@ export const vi = {
       desc: "Đăng ký để nhận những tin tức và cập nhật mới nhất từ chúng tôi.",
       placeholder: "Nhập email của bạn",
     },
-    copyright: "Lorem Ipsum. Đã đăng ký bản quyền.",
+    copyright:
+      "CÔNG TY TNHH THƯƠNG MẠI VÀ XUẤT NHẬP KHẨU MATRION - Mã số doanh nghiệp: 0318842287 - Giấy chứng nhận đăng ký doanh nghiệp do Sở Kế hoạch và Đầu tư TP.Hồ Chí Minh cấp lần đầu ngày 21/02/2025 .",
   },
 };

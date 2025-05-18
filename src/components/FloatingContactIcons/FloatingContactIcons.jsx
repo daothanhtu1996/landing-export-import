@@ -12,16 +12,16 @@ const FloatingContactIcons = () => {
         💬
       </button>
       <div className="icon-list">
-        <a
+        {/* <a
           href="https://m.me/daothanhtu1996"
           target="_blank"
           rel="noopener noreferrer"
           className="icon facebook"
         >
           <FaFacebookF />
-        </a>
+        </a> */}
         <a
-          href="https://zalo.me/0935123456"
+          href="https://zalo.me/0937083564"
           target="_blank"
           rel="noopener noreferrer"
           className="icon zalo"

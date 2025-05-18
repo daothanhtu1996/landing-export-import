@@ -8,7 +8,7 @@ const Features = () => {
   const t = useTranslate();
 
   return (
-    <section className="features-section">
+    <section className="features-section " id="products">
       <div className="features-wrapper">
         <div className="features-image">
           <img src={featureImg} alt="Feature" />

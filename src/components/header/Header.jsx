@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import "./Header.scss";
 import logoDen from "../../assets/den.png";
 import useTranslate from "../../hooks/useTranslate";
@@ -14,15 +14,35 @@ const Header = () => {
     { id: "home", label: t("nav.home") },
     { id: "about", label: t("nav.about") },
     { id: "products", label: t("nav.products") },
-    { id: "career", label: t("nav.career") },
+    { id: "testimonials", label: t("nav.testimonials") },
     { id: "contact", label: t("nav.contact") },
   ];
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
+
   const toggleLanguage = () => {
     const nextLang = language === "en" ? "vi" : "en";
     switchLanguage(nextLang);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY + 150;
+      let current = "home";
+
+      navItems.forEach((item) => {
+        const section = document.getElementById(item.id);
+        if (section && section.offsetTop <= scrollY) {
+          current = item.id;
+        }
+      });
+
+      setActive(current);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [navItems]);
 
   return (
     <header className="header">

@@ -17,8 +17,7 @@ function App() {
       <Hero />
       <About />
       <Services />
-      <Features />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
       <Footer />
       <ScrollToTop />

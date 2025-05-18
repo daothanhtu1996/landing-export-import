@@ -28,7 +28,7 @@ const Contact = () => {
         "service_gfbyx2r",
         "template_zd4mu9h",
         form.current,
-        "zfleLGnhslx4w9Rg"
+        "2XpiurBUCM6CCPRrQ"
       )
       .then(() => {
         alert("Gửi thành công!");
@@ -55,7 +55,8 @@ const Contact = () => {
             </div>
             <div className="text">
               <p className="call-label">{t("contact.callLabel")}</p>
-              <p className="phone">+1 (229) 555-0109</p>
+              <p className="phone">+(84) 969441533</p>
+              <p className="phone">+(84) 969009553</p>
             </div>
           </div>
         </div>
@@ -77,12 +78,12 @@ const Contact = () => {
           </div>
           <div className="row">
             <input type="text" name="phone" placeholder={t("contact.phone")} />
-            <select name="freight">
+            {/* <select name="freight">
               <option value="">{t("contact.freightOption")}</option>
               <option value="air">{t("freight.air")}</option>
               <option value="sea">{t("freight.sea")}</option>
               <option value="road">{t("freight.road")}</option>
-            </select>
+            </select> */}
           </div>
           <textarea
             name="message"

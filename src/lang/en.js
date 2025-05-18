@@ -2,52 +2,72 @@
 
 export const en = {
   hero: {
-    subtitle: "Trusted Import & Export Solutions",
-    title: "GLOBAL TRADE MADE SIMPLE. WE CONNECT MARKETS.",
-    highlight: "Delivering value through trust, efficiency, and global reach.",
+    subtitle: "ALL-IN-ONE BUSINESS SOLUTION FROM VIETNAM",
+    title: "MATRION CONNECTS IMPORT & EXPORT MARKET WITH SIMPLE PROCESS",
+    highlight:
+      "Delivering value through trust, efficiency, and safe transactions.",
     cta: "Read More",
   },
   nav: {
     home: "HOME",
     about: "ABOUT US",
     products: "PRODUCTS",
-    career: "CAREER",
-    contact: "CONTACT US",
+    testimonials: "OUR CLIENTS",
+    contact: "CONTACT",
   },
   about: {
     subtitle: "About Us",
-    title: "Welcome to MATRION Export Services",
+    title: "MATRION TRADING",
     description:
-      "We specialize in providing reliable import and export solutions for businesses worldwide. With a professional team and global network, we ensure your goods reach the right destination at the right time.",
+      "Matrion specialize in providing reliable import and export solutions for businesses related to Vietnamese-made products. With a professional team and network with manufacturers, Matrion will source best products with reasonable price and ensure your transaction to make in-time global delivery.",
     cta: "Read More",
 
-    factsSubtitle: "Some Facts",
-    factsTitle: "#1 Place to Manage All of Your Shipments",
-    factsDescription:
-      "With years of experience in international trade, MATRION has built a reputation for excellence and efficiency. Our platform helps you manage logistics with confidence.",
+    factsSubtitle1: "WHY CHOOSE MATRION?",
+    factsTitle1:
+      "#1 Matrion advises A-Z solution for businesses in different industries.",
+    factsDescription1:
+      "We understand your effort in business and we are here to design and make excellent gifts to your customers.",
+    // ________
+    factsTitle2: "#2 Matrion ensures high quality standard for all products.",
+    factsDescription2:
+      "We serve global clients and ensure high quality export standard for all products. ",
+    // ________
+    factsTitle3: "#3 Matrion provides in-time storage and delivery. ",
+    factsDescription3:
+      "We provide many options on payment, storage and delivery for your business, save your time instead of dealing with separate manufacturers. ",
+    // ________
+    factsTitle4: "#4 Matrion gives you competitive cost. ",
+    factsDescription4:
+      "We have experience in both export (export certificate) and local Vietnam trading, your payment is worth and competitive. ",
     clients: "Happy Clients",
     shipments: "Complete Shipments",
     reviews: "Customer Reviews",
   },
 
   services: {
-    subtitle: "Our Services",
-    title: "Explore Our Services",
+    subtitle: "PRODUCTS",
+    title: "Explore Our Products Made-In-Vietnam with export quality",
     description:
       "We are importers and distributors of high-quality products for various industries.",
     cta: "Read More",
     items: {
-      1: { title: "Agriculture Chemicals" },
-      2: { title: "Agriculture Machinery" },
-      3: { title: "Industrial Chemicals" },
-      4: { title: "Pigments" },
-      5: { title: "Lubricant" },
+      1: { title: "Motorcycle helmet" },
+      2: { title: "Cotton cap" },
+      3: { title: "Polo shirt/T-shirt" },
+      4: { title: "Moven and non-moven bag" },
+      5: { title: "Umbrella" },
       6: { title: "Detergents" },
+      7: { title: "Luggage tag" },
+      8: { title: "Thermal cup" },
+      9: { title: "Pen" },
+      10: { title: "Drawstring backpack" },
+      11: { title: "Raincoat" },
+      12: { title: "Notebook" },
     },
   },
   features: {
     subtitle: "Our Features",
-    title: "We are trusted logistics company since 1990",
+    title: "Our Strategic Customers",
     items: {
       1: "Worldwide Service",
       2: "On Time Delivery",
@@ -62,7 +82,7 @@ export const en = {
     name: "Name",
     email: "Email",
     phone: "Phone Number",
-    message: "Message",
+    message: "Which product you want to get price?",
     freightOption: "Select a Freight",
     send: "Submit",
     sending: "Sending...",
@@ -73,8 +93,8 @@ export const en = {
     road: "Road Freight",
   },
   testimonials: {
-    subtitle: "Testimonials",
-    title: "What Our Clients Say About Us",
+    subtitle: "OUR STRATEGIC CLIENTS",
+    title: "Feedbacks from our strategic clients",
     items: [
       {
         name: "Leslie Alexander",
@@ -117,9 +137,11 @@ export const en = {
   footer: {
     address: {
       title: "Address",
-      line1: "2464 Royal Ln. Mesa, New Jersey 45463",
-      phone: "(229) 555-0109",
-      email: "michael@example.com",
+      line1:
+        "4/7 XUAN THOI THUONG 6 STREET, XUAN THOI THUONG COMMUNE, HOC MON DISTRICT, HO CHI MINH CITY",
+      phone: "(84) 969441533",
+      phone2: "(84) 969009553",
+      email: "matrionvn@gmail.com",
     },
     products: {
       title: "Products",
@@ -142,6 +164,7 @@ export const en = {
       desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
       placeholder: "Email",
     },
-    copyright: "Lorem Ipsum. All Right Reserved.",
+    copyright:
+      "MATRION TRADING AND IMPORT EXPORT COMPANY LIMITED - TAX ID: 0318842287 .",
   },
 };

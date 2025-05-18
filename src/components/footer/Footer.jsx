@@ -29,13 +29,17 @@ const Footer = () => {
             <span>{t("footer.address.phone")}</span>
           </div>
           <div className="contact-item">
+            <FaPhoneAlt />
+            <span>{t("footer.address.phone2")}</span>
+          </div>
+          <div className="contact-item">
             <FaEnvelope />
             <span>{t("footer.address.email")}</span>
           </div>
         </div>
 
         {/* Column 2: Products */}
-        <div>
+        {/* <div>
           <h4>{t("footer.products.title")}</h4>
           <ul>
             <li>
@@ -57,9 +61,9 @@ const Footer = () => {
               <a href="#">{t("footer.products.tyres")}</a>
             </li>
           </ul>
-        </div>
+        </div> */}
 
-        {/* Column 3: Quick Links */}
+        {/* Column 3: Quick Links
         <div>
           <h4>{t("footer.links.title")}</h4>
           <ul>
@@ -76,10 +80,10 @@ const Footer = () => {
               <a href="#">{t("footer.links.contact")}</a>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Column 4: Newsletter */}
-        <div className="newsletter">
+        {/* <div className="newsletter">
           <h4>{t("footer.newsletter.title")}</h4>
           <p>{t("footer.newsletter.desc")}</p>
           <form className="newsletter-form">
@@ -91,12 +95,12 @@ const Footer = () => {
               <FaArrowRight />
             </button>
           </form>
-        </div>
+        </div> */}
       </div>
 
       {/* Footer Bottom */}
       <div className="footer-bottom">
-        <p>© 2024 {t("footer.copyright")}</p>
+        <p>© {t("footer.copyright")}</p>
         <div className="social-icons">
           <a href="#">
             <FaFacebookF />

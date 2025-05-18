@@ -8,6 +8,12 @@ import service3 from "../../assets/service3.png";
 import service4 from "../../assets/service4.png";
 import service5 from "../../assets/service5.png";
 import service6 from "../../assets/service6.png";
+import service7 from "../../assets/service7.png";
+import service8 from "../../assets/service8.png";
+import service9 from "../../assets/service9.png";
+import service10 from "../../assets/service10.png";
+import service11 from "../../assets/service11.png";
+import service12 from "../../assets/service12.png";
 import ServiceModal from "../Services/ServiceModal";
 
 const services = [
@@ -15,7 +21,6 @@ const services = [
     id: 1,
     title: "Agriculture Chemicals",
     image: service1,
-
     description:
       "High-quality chemicals used in agriculture to ensure productivity and sustainability.",
   },
@@ -54,6 +59,48 @@ const services = [
     description:
       "Industrial and household detergents ensuring high cleaning performance.",
   },
+  {
+    id: 7,
+    title: "Lubricant",
+    image: service7,
+    description:
+      "Premium lubricants formulated to extend machinery lifespan and reduce friction.",
+  },
+  {
+    id: 8,
+    title: "Detergents",
+    image: service8,
+    description:
+      "Industrial and household detergents ensuring high cleaning performance.",
+  },
+  {
+    id: 9,
+    title: "Detergents",
+    image: service9,
+    description:
+      "Industrial and household detergents ensuring high cleaning performance.",
+  },
+  {
+    id: 10,
+    title: "Lubricant",
+    image: service10,
+    description:
+      "Premium lubricants formulated to extend machinery lifespan and reduce friction.",
+  },
+  {
+    id: 11,
+    title: "Detergents",
+    image: service11,
+    description:
+      "Industrial and household detergents ensuring high cleaning performance.",
+  },
+  {
+    id: 12,
+    title: "Detergents",
+    image: service12,
+    description:
+      "Industrial and household detergents ensuring high cleaning performance.",
+  },
 ];
 
 const Services = () => {
@@ -72,7 +119,7 @@ const Services = () => {
   };
 
   return (
-    <section className="services-section" id="services">
+    <section className="services-section" id="products">
       <div className="container">
         <p className="subtitle">{t("services.subtitle")}</p>
         <h2 className="title">{t("services.title")}</h2>
@@ -103,9 +150,9 @@ const Services = () => {
                 <div className="content">
                   <h3>{t(`services.items.${s.id}.title`)}</h3>
                   <p>{t("services.description")}</p>
-                  <button className="read-more" onClick={() => handleOpen(s)}>
+                  {/* <button className="read-more" onClick={() => handleOpen(s)}>
                     {t("services.cta")} <FaArrowRight />
-                  </button>
+                  </button> */}
                 </div>
               </div>
             );

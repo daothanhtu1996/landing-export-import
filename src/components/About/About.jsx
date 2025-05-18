@@ -1,9 +1,8 @@
 import React from "react";
 import "./About.scss";
 import useTranslate from "../../hooks/useTranslate";
-import aboutImage from "../../assets/truck-bg.png";
+import aboutImage from "../../assets/xe.jpeg";
 import blob from "../../assets/blob.svg";
-import { FaSmile, FaBox, FaPen } from "react-icons/fa";
 
 const About = () => {
   const t = useTranslate();
@@ -29,30 +28,22 @@ const About = () => {
         </div>
 
         <div className="about-bottom container">
-          <div className="facts-left">
-            <p className="facts-subtitle">{t("about.factsSubtitle")}</p>
-            <h3 className="facts-title">{t("about.factsTitle")}</h3>
-            <p className="facts-description">{t("about.factsDescription")}</p>
+          <div className="fact-box">
+            <p className="facts-subtitle">{t("about.factsSubtitle1")}</p>
+            <h3 className="facts-title">{t("about.factsTitle1")}</h3>
+            <p className="facts-description">{t("about.factsDescription1")}</p>
           </div>
-          <div className="facts-right">
-            <div className="fact-box">
-              <FaSmile className="icon" />
-              <p>
-                <span>100</span> {t("about.clients")}
-              </p>
-            </div>
-            <div className="fact-box">
-              <FaBox className="icon" />
-              <p>
-                <span>10</span> {t("about.shipments")}
-              </p>
-            </div>
-            <div className="fact-box">
-              <FaPen className="icon" />
-              <p>
-                <span>4</span> {t("about.reviews")}
-              </p>
-            </div>
+          <div className="fact-box">
+            <h3 className="facts-title">{t("about.factsTitle2")}</h3>
+            <p className="facts-description">{t("about.factsDescription2")}</p>
+          </div>
+          <div className="fact-box">
+            <h3 className="facts-title">{t("about.factsTitle3")}</h3>
+            <p className="facts-description">{t("about.factsDescription3")}</p>
+          </div>
+          <div className="fact-box">
+            <h3 className="facts-title">{t("about.factsTitle4")}</h3>
+            <p className="facts-description">{t("about.factsDescription4")}</p>
           </div>
         </div>
       </div>
